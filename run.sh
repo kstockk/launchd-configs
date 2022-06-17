@@ -25,8 +25,8 @@ ln -si $MY_LAUNCHD* $LAUNCHD_DIR
 # as this script doesn't test anything... Only loads them in...
 for file in $LAUNCHD_DIR*; do
     if [[ "$file" == *com.$(whoami).*.plist ]]; then
-        launchctl unload $file
-        launchctl load $file
+        launchctl unload -w $file
+        launchctl load -w $file
     fi
 done
 
