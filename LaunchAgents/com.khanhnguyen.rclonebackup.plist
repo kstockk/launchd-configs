@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>Label</key>
+        <string>com.khanhnguyen.rclonebackup</string>
+        <key>Program</key>
+        <string>/Users/khanhnguyen/Repos/_prd/rclone-backup/rclone-backup.sh</string>
+        <key>EnvironmentVariables</key>
+        <dict>
+            <key>PATH</key>
+            <string>/bin:/usr/bin:/usr/local/bin</string>
+        </dict>
+        <key>ProgramArguments</key>
+            <array>
+                <string>/Users/khanhnguyen/Repos/_prd/rclone-backup/rclone-backup.sh</string>
+                <string>/Volumes/newfarm/Cabinet</string>
+                <string>encrypted:newfarm/Cabinet</string>
+            </array>
+        <key>StandardInPath</key>
+        <string>/tmp/rclonebackup.stdin</string>
+        <key>StandardOutPath</key>
+        <string>/tmp/rclonebackup.stdout</string>
+        <key>StandardErrorPath</key>
+        <string>/tmp/rclonebackup.stderr</string>
+        <key>WorkingDirectory</key>
+        <string>/Users/khanhnguyen/Repos/_prd/rclone-backup</string>
+        <!-- <key>StartCalendarInterval</key>
+        <dict>
+            <key>Hour</key>
+            <integer>02</integer>
+            <key>Minute</key>
+            <integer>00</integer>
+        </dict> -->
+        <key>WatchPaths</key>
+        <array>
+            <string>/Library/Preferences/com.apple.TimeMachine.plist</string>
+        </array>
+    </dict>
+</plist>
